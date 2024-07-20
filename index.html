@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteirinha de Universitário - Unia SP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <img src="logo.png" alt="Uni SP Logo" class="logo">
+        <h1>Unia SP - Acesso à Carteirinha</h1>
+        <input type="text" id="username" placeholder="Nome de usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+    </div>
+    
+    <div class="card-container" id="card-container" style="display: none;">
+        <div class="card">
+            <div class="card-watermark"></div>
+            <div class="card-header">
+                <div class="photo-container">
+                    <img id="user-photo" src="" alt="Foto do Universitário">
+                </div>
+                <div class="card-info">
+                    <h1 id="name">Nome do Universitário</h1>
+                    <p id="matricula">Matrícula: </p>
+                    <p id="curso">Curso: </p>
+                    <p id="auth-code">Código de Autenticidade: </p>
+                </div>
+            </div>
+        </div>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
